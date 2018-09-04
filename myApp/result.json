@@ -1,0 +1,12 @@
+[
+	{
+		"_id": "QRIuaYk-yGSNvCm03DdOcixQkGloq7cu",
+		"session": "{\"cookie\":{\"originalMaxAge\":2592000000,\"expires\":\"2018-06-27T08:15:49.727Z\",\"httpOnly\":true,\"path\":\"/\"}}",
+		"expires": "2018-06-27T08:15:49.727Z"
+	},
+	{
+		"_id": "usE7ZISr3VSRDdYud04qXlEr3rKzyJiq",
+		"session": "{\"cookie\":{\"originalMaxAge\":2591999995,\"expires\":\"2018-06-27T09:46:41.939Z\",\"httpOnly\":true,\"path\":\"/\"}}",
+		"expires": "2018-06-27T09:46:41.939Z"
+	}
+]

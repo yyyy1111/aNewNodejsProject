@@ -1,0 +1,711 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 注册页样式 */
+
+.reg-form {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px dashed rgba(0, 0, 0, .5);
+}
+
+.reg-form h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "微软雅黑";
+}
+
+.reg-form label {
+  position: relative;
+  display: inline-block;
+  width: 350px;
+  height: 30px;
+  clear: both;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.reg-form label span {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.reg-form label input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  outline: 0;
+}
+
+.reg-form label p {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  clear: both;
+  position: absolute;
+  right: 0;
+  top: 7px;
+  color: #fff;
+  /* font-weight: 700; */
+  /* background-color: #0f0; */
+  border-radius: 50%;
+}
+
+.reg-form label p.true {
+  background-color: #80D640;
+}
+
+.reg-form label p.false {
+  background-color: #DD5044;
+}
+
+.reg-form label.user div.success {
+  color: #80D640;
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+
+.reg-form label.user div.error {
+  color: #DD5044;
+  position: absolute;
+  top: 0;
+  right: 30%;
+}
+
+.reg-form #userSubmit {
+  display: inline-block;
+  width: 200px;
+  margin-left: 78px;
+  margin-top: 20px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(126, 213, 61, .8);
+}
+
+.reg-form #userSubmit:hover {
+  background-color: rgba(126, 213, 61, .6);
+}
+
+.reg-form label.user {
+  display: none;
+  margin: 0;
+  line-height: 30px;
+  margin-top: -24px;
+  text-align: center;
+  width: 350px;
+  height: 30px;
+  clear: both;
+  position: relative;
+}
+.goBack{
+  position: absolute;
+  right:10px;
+  bottom:15px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(59, 158, 255, .8);
+  border-radius: 5px;
+  font-size: 16px;
+  /* float: left; */
+}
+.goBack:hover{
+  background-color: rgba(59, 158, 255, .6);
+}
+/* 登录样式 */
+
+.log-form {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  border: 1px dashed rgba(0, 0, 0, .5);
+  position: relative;
+}
+
+.log-form h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-family: "微软雅黑";
+}
+
+.log-form label {
+  display: inline-block;
+  width: 300px;
+  height: 30px;
+  clear: both;
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+
+.log-form label span {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.log-form label input {
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  outline: 0;
+}
+
+.log-form label p {}
+
+.log-form #userSubmit {
+  display: inline-block;
+  width: 200px;
+  margin-left: 78px;
+  height: 34px;
+  line-height: 34px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  background-color: rgba(126, 213, 61, .8);
+  cursor: pointer;
+}
+
+.log-form #userSubmit:hover {
+  background-color: rgba(126, 213, 61, .6);
+}
+.log-form  .goBack{
+  position: absolute;
+  right:10px;
+  bottom:15px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(59, 158, 255, .8);
+  border-radius: 5px;
+  font-size: 16px;
+}
+/*home样式 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+ul.ulTabs {
+  width: 1000px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-bottom: 1px solid #7ED53D;
+}
+
+ul.ulTabs li {
+  float: left;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  width: 16.6%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  color: #000000;
+  overflow: hidden;
+}
+ul.ulTabs li:hover{
+  color: #7ED53D;
+}
+ul.ulTabs li:nth-last-child(1):hover{
+  overflow:visible;
+}
+.theFuncList{
+  width: 100%;
+}
+.theFuncList p{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-top: none;
+}
+.theFuncList p:nth-child(1):hover{
+  background:#fff;
+  color: #7ED53D;
+}
+.theFuncList p:hover{
+  background:rgba(126, 213, 61, .8);
+  color: #fff;
+}
+/* ul.ulTabs li:hover{
+  color:#7ED53D;
+} */
+
+ul.ulTabs li.chosen {
+  color: #7ED53D;
+}
+
+.theArticle_list {
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.theArticle_list ul li h3 {
+  font-size: 20px;
+  font-family: "微软雅黑";
+  color: #E22018;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.theArticle_list ul li {
+  list-style: none;
+  border-bottom: 1px dashed #8AAFCB;
+  margin-top: 40px;
+}
+.theArticle_list ul li:nth-last-child(1){
+  border: none;
+}
+.theArticle_list ul li div {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  color: #B7BBC2;
+  line-height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.theArticle_list ul li p span:nth-child(1) {
+  display: inline-block;
+  /* width: 100px; */
+  margin-right: 30px;
+}
+
+.theArticle_list ul li article {
+  width: 498px;
+  height: 100px;
+  overflow: hidden;
+  /* border: 1px solid rgba(102, 102, 102, 0.4); */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-indent: 20px;
+}
+
+.theArticle_list ul li:hover article {
+  color: #7ED53D;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container .left {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "微软雅黑";
+  width: 118px;
+  height: 300px;
+  top: 25px;
+  line-height: 110px;
+  text-shadow: -5px 5px 2px rgba(125,212,59,0.7);
+  /* background-color: #7DD43B; */
+}
+
+/* 文章发布页面 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.edit-container {
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  /* text-align: center; */
+}
+
+.edit-container h3 {
+  width: 500px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #7ED53D;
+}
+
+.edit-container div {
+  line-height: 30px;
+}
+
+.edit-container p {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #DD4F42;
+}
+
+.edit-container input {
+  margin: 5px 0;
+  outline: none;
+}
+
+.edit-container textarea {
+  margin: 5px 0;
+  width: 99%;
+}
+
+.edit-container button {
+  border: none;
+  background-color: rgba(126, 213, 61, 0.5);
+  color: #fff;
+  width: 130px;
+  /* height: 50px; */
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: '微软雅黑';
+  border-radius: 5px;
+  cursor: pointer;
+  /* display: inline-block; */
+  outline: none;
+}
+
+.edit-container button:hover {
+  background-color: rgba(126, 213, 61, 0.8);
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+.edit-container  .goBack{
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(59, 158, 255, .8);
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* 
+  markdown文章发布样式
+*/
+.theEdit_Box {
+  width: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  /* text-align: center; */
+}
+
+.theEdit_Box h3 {
+  width: 500px;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-bottom: 1px solid #7ED53D;
+}
+
+.theEdit_Box div {
+  line-height: 30px;
+}
+
+.theEdit_Box p {
+  margin: 5px 0;
+  font-size: 20px;
+  color: #DD4F42;
+}
+
+.theEdit_Box input {
+  margin: 5px 0;
+  outline: none;
+}
+
+.theEdit_Box textarea {
+  margin: 5px 0;
+  width: 99%;
+}
+
+.theEdit_Box button {
+  border: none;
+  background-color: rgba(126, 213, 61, 0.5);
+  color: #fff;
+  width: 130px;
+  /* height: 50px; */
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  font-family: '微软雅黑';
+  border-radius: 5px;
+  cursor: pointer;
+  /* display: inline-block; */
+  outline: none;
+}
+
+.theEdit_Box button:hover {
+  background-color: rgba(126, 213, 61, 0.8);
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}
+.theEdit_Box  .goBack{
+  position: absolute;
+  right:0;
+  bottom:0;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(59, 158, 255, .8);
+  border-radius: 5px;
+  font-size: 16px;
+}
+.theEdit_Box .theLink{
+  display: inline-block;
+  line-height: 20px;
+}
+/* 图片上传功能样式 */
+
+.userCon {
+  width: 500px;
+  /* height: 300px; */
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 100px;
+  position: relative;
+}
+
+.userCon .upLoadCon header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  font-family: "微软雅黑";
+  margin-bottom: 20px;
+}
+
+.userCon .upLoadCon form .imgBox {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.userCon .upLoadCon form .imgBox img {
+  width: 100%;
+}
+
+.file {
+  position: relative;
+  display: inline-block;
+  background: #D0EEFF;
+  border: 1px solid #99D3F5;
+  border-radius: 4px;
+  padding: 4px 12px;
+  overflow: hidden;
+  color: #1E88C7;
+  text-decoration: none;
+  text-indent: 0;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.file input {
+  position: absolute;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.file:hover {
+  background: #AADFFD;
+  border-color: #78C3F3;
+  color: #004974;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.userCon .upLoadCon form .btn {
+  /*display: block;*/
+  background-color: rgba(126, 213, 61, .6);
+  border: none;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 5px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-family: '微软雅黑';
+  margin-left: 10px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.userCon .upLoadCon form .btn:hover {
+  background-color: rgba(126, 213, 61, .9);
+}
+
+.userCon .user-info {
+  float: left;
+  width: 500px;
+  overflow: hidden;
+  height: auto;
+  margin-top: 50px;
+}
+
+.userCon .user-info li {
+  clear: both;
+  line-height: 40px;
+}
+
+.userCon .user-info li span {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "微软雅黑";
+  text-shadow: 5px -3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.userCon .user-info li p {
+  font-size: 20px;
+  color: rgba(126, 213, 61, .6);
+  line-height: 70px;
+  text-shadow: 5px 5px 5px rgba(126, 213, 61, .4);
+}
+
+.userCon {
+  border: 1px dashed rgba(126, 213, 61, 0.5);
+  padding: 20px 10px 20px 30px;
+}
+
+.userCon #progress {
+  display: inline-block;
+  vertical-align: middle;
+}
+.userCon .goBack{
+  position: absolute;
+  right:10px;
+  bottom:15px;
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(59, 158, 255, .8);
+  border-radius: 5px;
+  font-size: 16px;
+}
+/* *
+  文章详情页面样式
+* */
+.articleDetail{
+  width: 100%;
+  overflow: hidden;
+}
+.articleDetail h3{
+  width: 100%;
+  overflow: hidden;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: -10px 5px 3px rgba(126, 213, 61, .4);
+}
+.articleDetail  p.articleDetail_title{
+  text-align: right;
+}
+.articleDetail  p.articleDetail_title span{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 16px;
+  color:#ccc;
+  cursor: pointer;
+}
+.articleDetail div{
+  font-size: 20px;
+  color: #555;
+  text-indent: 50px;
+  line-height: 40px;
+  width: 100%;
+  margin-top: 40px;
+}
+.articleDetail .theGoBack{
+  display: block;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height:40px;
+  color: #fff;
+  background: rgba(59, 158, 255, .8);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.articleDetail .theGoBack:hover{
+  background: rgba(59, 158, 255, .6);
+}

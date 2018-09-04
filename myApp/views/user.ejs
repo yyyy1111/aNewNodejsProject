@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前端页面模板</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/plugins/layui-v2.2.6/css/modules/laydate/default/laydate.css" />
+    <link rel="stylesheet" type="text/css" href="/plugins/layui-v2.2.6/css/modules/layer/default/layer.css" />
+    
+</head>
+<body>
+    <%- include(page)%>
+    <script src='http://libs.baidu.com/jquery/2.0.0/jquery.min.js'></script>
+    <% if(page=='register'){%>
+        <%# 当请求的页面为注册页面时 载入reg.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/reg.js"></script>
+        <%}
+    %>
+    <% if(page=='login'){%>
+        <%# 当请求的页面为登录页面时 载入login.js模块 %>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/login.js"></script>
+        <%}
+    %>   
+    <% if(page=='userInfo'){%>
+        <%# 当请求的页面为用户信息页面时 载入userMes.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/userMes.js"></script>
+        <%}
+    %>
+    <%if(page=='home'){%>
+        <%# 当请求的页面为用户主页页面时 载入userEditHome.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/userEditHome.js"></script>   
+        <%}
+    %>
+    <%if(page=='edit'){%>
+        <%# 当请求的页面为用户文章编辑页面时 载入userEdit.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/userEdit.js"></script>
+        <%}
+    %>
+    <%if(page=='articleDetail'){%>
+        <%# 当请求的页面为指定文章详情页面时 载入articleDetail.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/articleDetail.js"></script>
+        <%}
+    %>
+    <%if(page=='post'){%>
+        <%# 当请求的页面为markdown文章编辑页面时 载入post.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/post.js"></script>
+        <script src="/plugins/marked.min.js"></script>
+        <%}
+    %>
+    <%if(page=='doc'){%>
+        <%# 当请求的页面为markdown文章编辑页面时 载入post.js模块%>
+        <script src="/plugins/layui-v2.2.6/layui.all.js" type="text/javascript" charset="utf-8"></script>
+        <script src="/javascripts/doc.js"></script>
+        <%}
+    %>
+</body>
+</html>
